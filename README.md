@@ -10,14 +10,12 @@ This project is a blog-like application where users can publish their blog posts
 
 - [Installation](#installation)
 - [Technologies](#technologies)
-- [License](#license)
 - [Contribution Guidelines](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
 
-Simply navigate to your terminal within the root folder of your project and run "npm i" or "npm install"
+Navigate to your terminal within the root folder of the project and run "npm i" or "npm install"
 
 ## Technologies
 
@@ -35,11 +33,6 @@ The license for this project is the MIT License.
 ## Contributing
 
 Add to your heart's desire!
-
-## Tests
-
-Below are some examples on how to run the tests for this project.
-No tests available at this time
 
 ## Questions
 
