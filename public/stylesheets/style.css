@@ -2,28 +2,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #93827f;
+  --secondary-color: #f3f9d2;
+  --tertiary-color: #bdc4a7;
+  --primary-highlight: #2f2f2f;
+  --secondary-highlight: #92b4a7;
+}
+
 body,
 html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  color: #333;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--primary-highlight);
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: var(--primary-color);
   font-weight: bold;
   transition: color 0.1s;
+  margin: 5px;
 }
 
 a:hover {
-  color: #3486eb;
+  color: var(--secondary-color);
+}
+
+.title {
+  color: var(--primary-highlight);
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: var(--primary-color);
   border: 0;
   padding: 1%;
   color: white;
@@ -34,7 +50,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: var(--tertiary-color);
 }
 
 .post-list {
@@ -52,7 +68,7 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid var(--tertiary-color);
 }
 
 textarea {
@@ -83,10 +99,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: var(--secondary-highlight);
 }
 
 header h1 {
   font-size: 1em;
+  color: var(--primary-highlight);
 }
 
 main {
@@ -100,16 +118,17 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: var(--primary-color);
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
-  margin-left: 16px;
+  margin: 5px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: var(--secondary-color);
 }
 
 .delete-post-btn {

@@ -1,7 +1,19 @@
-<ol class="post-list">
-  {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-    </li>
-  {{/each}}
-</ol>End of code snippet
+{{#if loggedIn}}
+<div></div>
+{{else}}
+<section>
+  <h2>
+    Welcome to Tech Blog!
+  </h2>
+</section>
+{{/if}}
+
+<section>
+  <ol class="post-list">
+    {{#each posts as |post|}}
+      <li>
+        {{> post-info post}}
+      </li>
+    {{/each}}
+  </ol>
+</section>
