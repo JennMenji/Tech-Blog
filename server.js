@@ -4,7 +4,7 @@ const sequelize = require("./config/connection");
 const path = require("path");
 const helpers = require("./utils/helpers");
 
-require("dotenv").config();
+// require("dotenv").config();
 
 // set up Handlebars
 const exphbs = require("express-handlebars");
@@ -14,7 +14,7 @@ const session = require("express-session");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
-  secret: process.env.SECRET,
+  secret: "my_secret",
   cookie: {},
   resave: false,
   saveUninitialized: true,
