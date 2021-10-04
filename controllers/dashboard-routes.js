@@ -13,6 +13,7 @@ router.get("/", withAuth, (req, res) => {
       "id",
       "post_url",
       "title",
+      "content",
       "created_at",
       [
         sequelize.literal(
@@ -54,6 +55,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
       "id",
       "post_url",
       "title",
+      "content",
       "created_at",
       [
         sequelize.literal(
