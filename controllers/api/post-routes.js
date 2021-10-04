@@ -120,7 +120,7 @@ router.put("/upvote", withAuth, (req, res) => {
   }
 });
 
-router.put("/:id", withAuth, (req, res) => {
+router.put("/:id", (req, res) => {
   Post.update(
     {
       title: req.body.title,
